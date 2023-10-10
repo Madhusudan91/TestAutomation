@@ -20,6 +20,7 @@ public class baseTest {
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 	
+	// Launch google site
 	@Test
 	public void launchUrl() {
 	String	url = "https://www.google.com/";
