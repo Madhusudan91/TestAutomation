@@ -1,16 +1,20 @@
-package test;
+package baseTest;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
  
+
 public class baseTest {
 
-	WebDriver driver;
+	public static WebDriver driver;
+	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		
 	@BeforeTest
 	public void initialize() {		
