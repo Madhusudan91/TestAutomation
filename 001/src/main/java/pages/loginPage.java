@@ -3,29 +3,33 @@ package pages;
 import baseTest.baseTest;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class loginPage extends baseTest{
 
 	//Enter email id or mobile number
 	//@FindBy(xpath="//*[@id='ap_email']")
 	@FindBy(id="ap_email")
-	WebElement enterEmail;
+	public WebElement enterEmail;
 	
 	//Continue button
 	//@FindBy(xpath="//*[@id='continue-announce']")
 	@FindBy(id="continue-announce")
-	WebElement continueBtn;
+	public WebElement continueBtn;
 	
 	//Password Field
 	//@FindBy(xpath="//*[@id='ap_password']")
 	@FindBy(id="ap_password")
-	WebElement enterPswd;
+	public WebElement enterPswd;
 	
 	//Password Field
 	//@FindBy(xpath="//*[@id='signInSubmit']")
 	@FindBy(id="signInSubmit")
-	WebElement signInBtn;
+	public WebElement signInBtn;
 	
+	public loginPage() {
+		PageFactory.initElements(driver, this);
+	}
 	
 	
 	
