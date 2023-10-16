@@ -1,17 +1,18 @@
 package baseTest;
 
 import java.time.Duration;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class baseTest {
+public class BaseTest {
 
 	public static WebDriver driver;
-	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	public static WebDriverWait wait;
 		
 	public static void initialize() {		
-	System.setProperty("webdriver.chrome.driver", "M:/Selenium/chromedriver-win32/chromedriver.exe");
+	//System.setProperty("webdriver.chrome.driver", "M:/Selenium/chromedriver-win32/chromedriver.exe");
 	driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	}

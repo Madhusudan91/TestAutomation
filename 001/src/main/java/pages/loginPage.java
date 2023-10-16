@@ -1,11 +1,11 @@
 package pages;
 
-import baseTest.baseTest;
+import baseTest.BaseTest;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class loginPage extends baseTest{
+public class loginPage extends BaseTest{
 
 	//Enter email id or mobile number
 	//@FindBy(xpath="//*[@id='ap_email']")

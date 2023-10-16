@@ -4,9 +4,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import baseTest.baseTest;
+import baseTest.BaseTest;
 
-public class loginPage extends baseTest{
+public class LoginPage extends BaseTest{
 	pages.loginPage loginPage = new pages.loginPage();
 		
 	public void verifyloginPage() {

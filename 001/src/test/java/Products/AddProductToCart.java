@@ -1,15 +1,16 @@
+package Products;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import baseTest.baseTest;
+import baseTest.BaseTest;
  
-public class addProductToCart extends baseTest {
-	methods.homePage homePage = new methods.homePage();
-	methods.loginPage loginPage = new methods.loginPage();
+public class AddProductToCart extends BaseTest {
+	methods.HomePage homePage = new methods.HomePage();
+	methods.LoginPage loginPage = new methods.LoginPage();
 	
-	public addProductToCart() { 
+	public AddProductToCart() { 
 		super();
 		}
 		
@@ -20,7 +21,7 @@ public class addProductToCart extends baseTest {
 		 launchUrl();
 		 }
 	 	
-	  @BeforeTest 
+	  @BeforeMethod
 	  public void login() { 
 		  homePage.clickToLogin();
 		  loginPage.verifyloginPage();
@@ -34,7 +35,7 @@ public class addProductToCart extends baseTest {
 		  homePage.enterValueAndSearch(); 
 	  }
 	  
-	  @AfterTest 
+	  @AfterMethod 
 	  public void logOut() {
 	   }
 	  

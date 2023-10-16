@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import baseTest.baseTest;
+import baseTest.BaseTest;
 
-public class homePage extends baseTest{
+public class homePage extends BaseTest{
 	
 	//Amazon logo
 	//@FindBy(xpath="//*[@id='logo-ext']")

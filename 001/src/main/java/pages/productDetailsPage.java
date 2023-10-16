@@ -3,9 +3,9 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import baseTest.baseTest;
+import baseTest.BaseTest;
 
-public class productDetailsPage extends baseTest {
+public class productDetailsPage extends BaseTest {
 
 		//Product Description
 		@FindBy(id="productTitle")
